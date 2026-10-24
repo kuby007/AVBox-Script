@@ -88,20 +88,37 @@ jobs:
           set -euo pipefail
           ./gradlew assembleRelease --no-daemon --stacktrace --max-workers=2 2>&1 | tee gradle_build.log
 
-      # 编译失败时把日志提交到 ci-log 分支，便于在无法下载 artifacts 的环境里排查
-      - name: Dump Gradle log on failure
-        if: failure()
+      # 把构建日志通过 Contents API 写回仓库（无法下载 artifacts 时也能排查）
+      - name: Publish Gradle log via API
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_N: ${{ github.run_number }}
         run: |
           set -uo pipefail
-          git config user.name "ci-bot"
-          git config user.email "ci-bot@example.com"
-          git checkout -B ci-log
-          cp gradle_build.log ci-gradle-build.log
-          tail -n 400 gradle_build.log > ci-gradle-tail.log || true
-          grep -nE '^(e: |w: |FAILURE:|\* What went wrong|Execution failed)' gradle_build.log > ci-gradle-errors.txt || true
-          git add -f ci-gradle-build.log ci-gradle-tail.log ci-gradle-errors.txt
-          git commit -m "ci: gradle build log (failure)"
-          git push -f origin ci-log
+          [ -f gradle_build.log ] || echo "(gradle_build.log 不存在)" > gradle_build.log
+          F="ci-logs/run-${RUN_N}.txt"
+          {
+            echo "=== run ${RUN_N} / attempt ${{ github.run_attempt }} ==="
+            echo "=== ERROR LINES ==="
+            grep -nE '^(e: |w: |FAILURE:|\* What went wrong|Execution failed|Could not (resolve|find|determine)|error:)' gradle_build.log | head -n 150 || true
+            echo
+            echo "=== TAIL 400 ==="
+            tail -n 400 gradle_build.log || true
+          } > /tmp/out.txt || true
+          base64 -w0 /tmp/out.txt > /tmp/b64.txt
+          python3 -c "
+          import json
+          d = open('/tmp/b64.txt').read().strip()
+          open('/tmp/payload.json','w').write(json.dumps({'message':'ci log run ${RUN_N}','content':d}))
+          "
+          curl -sS -X PUT \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
+            --data-binary @/tmp/payload.json \
+            "https://api.github.com/repos/${{ github.repository }}/contents/${F}"
+          echo "log published to ${F}"
 
       - name: Rename & verify APK
         id: apk
