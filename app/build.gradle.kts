@@ -114,8 +114,6 @@ dependencies {
     api(fileTree("libs") { include("*.jar", "*.aar") })
 
     implementation(libs.nanohttpd)
-    implementation(libs.cling.core)
-    implementation(libs.cling.support)
     compileOnly(libs.cdi.api)
     compileOnly(libs.javax.inject)
     compileOnly(libs.javax.annotation.api)
