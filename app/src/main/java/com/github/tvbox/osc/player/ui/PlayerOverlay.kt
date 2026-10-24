@@ -134,6 +134,7 @@ fun PlayerOverlay(
         state.subtitleSearchSheet?.let { sheet ->
             SubtitleSearchSheet(sheet) { state.subtitleSearchSheet = null }
         }
+
     }
 
     LaunchedEffect(state.seekHintVisible, state.seekHintText) {
