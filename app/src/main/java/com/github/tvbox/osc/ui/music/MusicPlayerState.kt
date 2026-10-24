@@ -5,7 +5,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.github.tvbox.osc.R
-import com.github.tvbox.osc.player.state.CastSheetState
 
 enum class MusicPlayMode(@StringRes val labelRes: Int) {
     SINGLE(R.string.music_mode_single),
@@ -39,5 +38,4 @@ class MusicPlayerState {
     var waveSeed by mutableStateOf(0)
     var playMode by mutableStateOf(MusicPlayMode.ORDER)
     var collected by mutableStateOf(false)
-    var castSheet by mutableStateOf<CastSheetState?>(null)
 }
