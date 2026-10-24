@@ -3,6 +3,7 @@ import org.gradle.api.initialization.resolve.RepositoriesMode
 
 pluginManagement {
     repositories {
+        maven("https://chaquo.com/maven")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         maven("https://jitpack.io")
@@ -19,10 +20,11 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.PREFER_SETTINGS
     repositories {
+        // Chaquopy 运行时（含 .imy 等自定义扩展名的构件）只在官方仓库发布，镜像不同步，必须放首位
+        maven("https://chaquo.com/maven")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         maven("https://jitpack.io")
-        maven("https://chaquo.com/maven")
         maven("https://repo1.maven.org/maven2")
         google()
         maven("https://maven.aliyun.com/repository/public")
