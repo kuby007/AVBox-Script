@@ -23,6 +23,10 @@ dependencyResolutionManagement {
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         maven("https://jitpack.io")
         maven("https://chaquo.com/maven")
+        maven("https://repo1.maven.org/maven2")
+        google()
+        maven("https://maven.aliyun.com/repository/public")
+        maven("https://maven.aliyun.com/repository/google")
     }
 }
 
