@@ -1,0 +1,45 @@
+name: Dependency Probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Probe candidate coordinates
+        run: |
+          {
+            echo "probe at $(date -u +%FT%TZ)"
+          } > probe.txt
+          for u in \
+            "https://jitpack.io/com/github/ctiao/DanmakuFlameMaster/0.9.25/DanmakuFlameMaster-0.9.25.pom" \
+            "https://jitpack.io/com/github/ctiao/dfm/0.9.25/dfm-0.9.25.pom" \
+            "https://jitpack.io/com/github/ctiao/DanmakuFlameMaster/v0.9.25/DanmakuFlameMaster-v0.9.25.pom" \
+            "https://jitpack.io/com/github/boxtm66/Danmaku/DanmakuFlameMaster/v0.9.26/DanmakuFlameMaster-v0.9.26.pom" \
+            "https://jitpack.io/com/github/boxtm66/Danmaku/dfm/v0.9.26/dfm-v0.9.26.pom" \
+            "https://maven.aliyun.com/repository/public/com/github/ctiao/DanmakuFlameMaster/0.9.25/DanmakuFlameMaster-0.9.25.pom" \
+            "https://maven.aliyun.com/repository/public/com/github/ctiao/dfm/0.9.25/dfm-0.9.25.pom" \
+            "https://jitpack.io/com/github/JessYanCoding/AndroidAutoSize/v1.2.1/AndroidAutoSize-v1.2.1.pom" \
+            "https://jitpack.io/com/github/JessYanCoding/AndroidAutoSize/1.2.1/AndroidAutoSize-1.2.1.pom" \
+            ; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "$u")
+            echo "$code  $u" >> probe.txt
+          done
+          cat probe.txt
+
+      - name: Publish probe result to ci-log
+        run: |
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@example.com"
+          git checkout -B ci-log
+          cp probe.txt ci-dep-probe.txt
+          git add -f ci-dep-probe.txt
+          git commit -m "dep probe result" || echo "nothing to commit"
+          git push -f origin ci-log || echo "push failed"
