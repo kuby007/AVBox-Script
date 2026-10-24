@@ -84,7 +84,6 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.github.tvbox.osc.R
-import com.github.tvbox.osc.player.ui.CastSheet
 import com.github.tvbox.osc.ui.components.AVBoxBottomSheet
 import com.github.tvbox.osc.ui.components.ImagePalette
 import com.github.tvbox.osc.ui.components.LocalTopBarGlassBackdrop
@@ -274,9 +273,6 @@ fun MusicPlayerScreen(
             }
         }
 
-        state.castSheet?.let { sheet ->
-            CastSheet(sheet) { state.castSheet = null }
-        }
     }
 }
 
