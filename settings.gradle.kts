@@ -3,6 +3,8 @@ import org.gradle.api.initialization.resolve.RepositoriesMode
 
 pluginManagement {
     repositories {
+        // AGP 的插件标记只在 google() 上，gradlePluginPortal / mavenCentral 都没有
+        google()
         gradlePluginPortal()
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         mavenCentral()
