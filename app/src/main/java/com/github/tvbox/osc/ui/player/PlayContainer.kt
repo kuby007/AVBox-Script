@@ -353,25 +353,7 @@ class PlayContainer(activity: Activity) : FrameLayout(activity), CustomAdapt, Pl
     }
 
     fun showCastDialog() {
-        if (MediaSources.isoHeaders(scheduler.webHeaderMap())) {
-            LOG.i("echo-iso-cast-blocked")
-            Toast.makeText(mContext, mContext.getString(R.string.player_iso_cast_unsupported), Toast.LENGTH_SHORT).show()
-            return
-        }
-        val webUrl = scheduler.webPlayUrl()
-        if (TextUtils.isEmpty(webUrl)) {
-            Toast.makeText(mContext, mContext.getString(R.string.toast_no_cast_url), Toast.LENGTH_SHORT).show()
-            return
-        }
-        if (!isAttached()) return
-        val castUrl = scheduler.getCastUrl(webUrl)
-        if (castUrl.isNullOrEmpty()) {
-            Toast.makeText(mContext, mContext.getString(R.string.toast_no_cast_url), Toast.LENGTH_SHORT).show()
-            return
-        }
-        val headers: HashMap<String, String>? = scheduler.webHeaderMap()?.let { HashMap(it) }
-        val title = getCastTitle()
-        // DLNA 投屏已移除(Cling 依赖无可用仓库)
+        Toast.makeText(mContext, "投屏功能已移除", Toast.LENGTH_SHORT).show()
     }
 
     fun openDanmuSearchSheet() = overlays.openDanmuSearchSheet()
