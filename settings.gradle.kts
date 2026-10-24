@@ -3,7 +3,6 @@ import org.gradle.api.initialization.resolve.RepositoriesMode
 
 pluginManagement {
     repositories {
-        maven("https://chaquo.com/maven")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         maven("https://jitpack.io")
@@ -20,17 +19,12 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.PREFER_SETTINGS
     repositories {
-        // 顺序很关键：镜像站常提供 pom 却缺构件（.imy/.aar 等），
-        // Gradle 一旦从某仓库拿到元数据就只去该仓库取文件，
-        // 因此官方源必须排在镜像之前。
-        google()
-        maven("https://chaquo.com/maven")
-        maven("https://repo1.maven.org/maven2")
-        maven("https://jitpack.io")
-        // 以下仅为加速镜像，兜底用
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
-        maven("https://maven.aliyun.com/repository/public")
-        maven("https://repo.huaweicloud.com/repository/maven/")
+        maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
+        // Cling (DLNA) 不在 Maven Central 镜像上，仅发布于 4thline 私有仓库
+        maven("https://4thline.org/m2")
+        mavenCentral()
+        maven("https://jitpack.io")
     }
 }
 
