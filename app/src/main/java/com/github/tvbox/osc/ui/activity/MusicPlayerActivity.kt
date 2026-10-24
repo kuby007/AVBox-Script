@@ -357,16 +357,7 @@ class MusicPlayerActivity : BaseActivity(), PlaybackPage {
     }
 
     private fun showCast() {
-        val url = controller.webPlayUrl()
-        if (url.isNullOrEmpty()) {
-            Toast.makeText(this, getString(R.string.toast_no_cast_url), Toast.LENGTH_SHORT).show()
-            return
-        }
-        val title = listOf(ui.title, ui.subtitle)
-            .filter { it.isNotBlank() }
-            .joinToString(" ")
-            .ifBlank { "TVBox" }
-        // DLNA 投屏已移除(Cling 依赖无可用仓库)
+        Toast.makeText(this, "投屏功能已移除", Toast.LENGTH_SHORT).show()
     }
 
     private fun refreshMeta() {
