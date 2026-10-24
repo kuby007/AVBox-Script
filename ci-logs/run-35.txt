@@ -1,0 +1,554 @@
+=== run 35 / attempt 1 ===
+=== ERROR LINES ===
+40:w: ⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage
+56:w: ⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage
+63:w: ⚠️ Deprecated 'org.jetbrains.kotlin.android' plugin usage
+293:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:174:28 Unnecessary safe call on a non-null receiver of type 'String'.
+294:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:232:99 'fun newInstance(): CapturedType(*)!' is deprecated. Deprecated in Java.
+295:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:310:46 Unchecked cast of 'Any!' to 'Array<Any?>?'.
+296:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:317:25 Condition is always 'false'.
+297:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/SpiderApi.kt:63:40 Condition is always 'false'.
+298:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/SpiderApi.kt:67:56 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+299:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/SpiderApi.kt:68:42 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+300:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Async.kt:17:29 Condition is always 'true'.
+301:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Async.kt:29:27 Condition is always 'true'.
+302:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Global.kt:83:125 'static fun encode(p0: String!): String!' is deprecated. Deprecated in Java.
+303:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Global.kt:83:176 'static fun encode(p0: String!): String!' is deprecated. Deprecated in Java.
+304:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/HtmlParser.kt:200:38 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+305:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Json.kt:16:28 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+306:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/net/OkDns.kt:18:17 Condition is always 'false'.
+307:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.kt:1000:17 Condition is always 'false'.
+308:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/ConfigLoader.kt:425:28 Condition is always 'false'.
+309:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:121:44 Condition is always 'false'.
+310:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:165:44 Condition is always 'false'.
+311:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:200:40 Condition is always 'false'.
+312:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:230:40 Condition is always 'false'.
+313:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:269:40 Condition is always 'false'.
+314:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:312:40 Condition is always 'false'.
+315:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:339:40 Condition is always 'false'.
+316:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:372:40 Condition is always 'false'.
+317:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:17:25 Condition is always 'false'.
+318:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:31:25 Condition is always 'false'.
+319:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:49:25 Condition is always 'false'.
+320:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:57:21 Condition is always 'false'.
+321:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SpiderLoader.kt:153:28 Condition is always 'false'.
+322:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:65:31 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+323:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:65:46 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
+324:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:74:20 'fun setStatusBarContrastEnforced(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+325:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:120:46 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+326:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:121:43 'static field SYSTEM_UI_FLAG_LAYOUT_STABLE: Int' is deprecated. Deprecated in Java.
+327:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:122:43 'static field SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+328:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:123:43 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+329:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:124:43 'static field SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+330:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:125:43 'static field SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+331:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:126:43 'static field SYSTEM_UI_FLAG_IMMERSIVE_STICKY: Int' is deprecated. Deprecated in Java.
+332:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:127:30 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+333:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:137:23 'fun setOnSystemUiVisibilityChangeListener(p0: View.OnSystemUiVisibilityChangeListener!): Unit' is deprecated. Deprecated in Java.
+334:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:138:39 'static field SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+335:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:138:78 'static field SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+336:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:210:27 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+337:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:210:42 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
+338:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/AbsJson.kt:205:34 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+339:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/AbsJson.kt:216:34 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+340:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/AbsJson.kt:253:30 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+341:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/Epginfo.kt:40:44 Java type mismatch: inferred type is 'Date?', but 'Date' was expected.
+342:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/LiveChannelItem.kt:123:25 The corresponding parameter in the supertype 'Any' is named 'other'. This may cause problems when calling this function with named arguments.
+343:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/ProxyRule.kt:72:17 Condition is always 'false'.
+344:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/AppDataManager.kt:74:14 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+345:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/AppDataManager.kt:75:13 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+346:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/CurrentSubscription.kt:12:13 Condition is always 'true'.
+347:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/EpisodeMatcher.kt:113:41 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+348:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/io/FileUtils.kt:452:18 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+349:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/io/FileUtils.kt:453:17 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+350:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkGoHelper.kt:294:20 Condition is always 'true'.
+351:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkGoHelper.kt:329:49 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+352:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkProxySelector.kt:22:17 Condition is always 'true'.
+353:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkProxySelector.kt:50:21 Condition is always 'false'.
+354:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/Proxy.kt:63:32 Condition is always 'true'.
+355:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/Proxy.kt:78:28 Condition is always 'true'.
+356:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/Proxy.kt:113:28 Condition is always 'true'.
+357:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/MyVideoView.kt:230:38 The corresponding parameter in the supertype 'AppPlayerView' is named 'width'. This may cause problems when calling this function with named arguments.
+358:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/MyVideoView.kt:230:55 The corresponding parameter in the supertype 'AppPlayerView' is named 'height'. This may cause problems when calling this function with named arguments.
+359:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:251:49 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+360:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:277:45 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+361:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:554:21 Condition is always 'true'.
+362:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:579:18 'var allowUniversalAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+363:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:580:18 'var allowFileAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+364:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:581:18 'var databaseEnabled: Boolean' is deprecated. Deprecated in Java.
+365:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:632:22 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+366:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:694:22 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+367:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackConfigDelegate.kt:34:92 Cast is redundant.
+368:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackFetch.kt:70:68 Java type mismatch: inferred type is 'Nothing?', but 'String' was expected.
+369:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackFetch.kt:75:72 Java type mismatch: inferred type is 'Nothing?', but 'String' was expected.
+370:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackFetch.kt:96:74 Java type mismatch: inferred type is 'Nothing?', but 'String' was expected.
+371:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackRetryDelegate.kt:425:130 Cast is redundant.
+372:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:22:8 'class NotificationCompat : Any' is deprecated. Deprecated in Java.
+373:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:39:31 'class MediaSessionCompat : Any' is deprecated. Deprecated in Java.
+374:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:113:24 'constructor(p0: Context, p1: String): MediaSessionCompat' is deprecated. Deprecated in Java.
+375:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:13 'class MediaSessionCompat : Any' is deprecated. Deprecated in Java.
+376:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:32 'static field FLAG_HANDLES_MEDIA_BUTTONS: Int' is deprecated. Deprecated in Java.
+377:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:62 'class MediaSessionCompat : Any' is deprecated. Deprecated in Java.
+378:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:81 'static field FLAG_HANDLES_TRANSPORT_CONTROLS: Int' is deprecated. Deprecated in Java.
+379:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:117:63 'class Callback : Any' is deprecated. Deprecated in Java.
+380:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:274:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+381:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:274:44 'constructor(): MediaMetadataCompat.Builder' is deprecated. Deprecated in Java.
+382:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:275:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+383:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:276:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+384:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:277:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+385:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:278:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+386:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:279:44 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+387:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:281:32 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+388:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:284:45 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+389:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:286:22 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+390:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:286:57 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+391:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:287:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+392:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:287:54 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+393:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:288:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+394:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:288:56 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+395:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:289:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+396:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:290:34 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+397:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:290:73 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+398:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:292:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+399:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:292:33 'constructor(): PlaybackStateCompat.Builder' is deprecated. Deprecated in Java.
+400:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:311:32 'constructor(p0: Context): NotificationCompat.Builder' is deprecated. Deprecated in Java.
+401:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:323:17 'constructor(): NotificationCompat.MediaStyle' is deprecated. Deprecated in Java.
+402:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:389:71 'static field WIFI_MODE_FULL_HIGH_PERF: Int' is deprecated. Deprecated in Java.
+403:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:442:9 'fun stopForeground(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+404:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PreloadManagerHolder.kt:192:18 'fun setMediaSourceFactory(p0: MediaSource.Factory): DefaultPreloadManager.Builder' is deprecated. Deprecated in Java.
+405:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PreloadManagerHolder.kt:243:17 Condition is always 'true'.
+406:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PreloadManagerHolder.kt:243:32 Condition is always 'true'.
+407:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/InfoOsdText.kt:231:28 Unnecessary safe call on a non-null receiver of type 'String'.
+408:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/InfoOsdText.kt:242:27 Unnecessary safe call on a non-null receiver of type 'Display'.
+409:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:148:14 'lateinit' is unnecessary: definitely initialized in constructors.
+410:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:150:14 'lateinit' is unnecessary: definitely initialized in constructors.
+411:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:152:14 'lateinit' is unnecessary: definitely initialized in constructors.
+412:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:154:14 'lateinit' is unnecessary: definitely initialized in constructors.
+413:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:504:30 The corresponding parameter in the supertype 'PlayerControlApi' is named 'listener'. This may cause problems when calling this function with named arguments.
+414:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/effect/anime4k/Anime4kShader.kt:65:48 Condition is always 'true'.
+415:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:170:21 'fun clearSelectionOverrides(p0: Int): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+416:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:174:29 'fun clearSelectionOverrides(p0: Int): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+417:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:177:21 'fun setSelectionOverride(p0: Int, p1: TrackGroupArray, p2: DefaultTrackSelector.SelectionOverride?): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+418:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:182:36 Unnecessary safe call on a non-null receiver of type 'Format'.
+419:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:182:72 Unnecessary safe call on a non-null receiver of type 'Format'.
+420:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:182:110 Unnecessary safe call on a non-null receiver of type 'Format'.
+421:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:313:87 'fun clearSelectionOverrides(): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+422:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:70:54 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+423:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:93:15 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+424:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:94:15 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+425:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:112:41 'class ConcatenatingMediaSource : CompositeMediaSource<ConcatenatingMediaSource.MediaSourceHolder>' is deprecated. Deprecated in Java.
+426:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:130:22 'constructor(p0: Boolean, p1: Boolean, p2: ShuffleOrder, vararg p3: MediaSource): ConcatenatingMediaSource' is deprecated. Deprecated in Java.
+427:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:244:33 'fun getSerializable(p0: String?): Serializable?' is deprecated. Deprecated in Java.
+428:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:258:21 Condition is always 'true'.
+429:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:258:36 Condition is always 'true'.
+430:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:299:33 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+431:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:305:89 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+432:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:306:37 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+433:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:307:27 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+434:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:314:65 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+435:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:316:62 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+436:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:321:26 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+437:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:324:26 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+438:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:326:22 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+439:w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:331:15 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+
+=== TAIL 400 ===
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libxslt/chaquopy_libxslt-1.1.32-2-py3-none-android_21_arm64_v8a.whl (178 kB)
+Collecting chaquopy-libcxx>=180000 (from ujson)
+  Downloading https://chaquo.com/pypi-13.1/chaquopy-libcxx/chaquopy_libcxx-180000-0-py3-none-android_24_arm64_v8a.whl (413 kB)
+Collecting charset_normalizer<4,>=2 (from requests)
+  Downloading https://repo.huaweicloud.com/repository/pypi/packages/fc/ad/d07d7862a62ffa6d79d68074d14823243dd235a77c45262acbf6adeb28bf/charset_normalizer-3.5.2-py3-none-any.whl (68 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Downloading https://repo.huaweicloud.com/repository/pypi/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl (69 kB)
+Collecting urllib3<3,>=1.26 (from requests)
+  Downloading https://repo.huaweicloud.com/repository/pypi/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl (135 kB)
+Collecting certifi>=2023.5.7 (from requests)
+  Downloading https://repo.huaweicloud.com/repository/pypi/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl (135 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4)
+  Downloading https://repo.huaweicloud.com/repository/pypi/packages/66/87/5ed59e1d0290564e2027ed066c52b059892c4637741337fc0967183c8d4d/soupsieve-2.10-py3-none-any.whl (38 kB)
+Collecting typing-extensions>=4.0.0 (from beautifulsoup4)
+  Downloading https://repo.huaweicloud.com/repository/pypi/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Installing collected packages: jsonpath, chaquopy-libxml2, chaquopy-libcxx, urllib3, ujson, typing-extensions, soupsieve, pycryptodome, idna, cssselect, charset_normalizer, chaquopy-libxslt, certifi, cachetools, requests, lxml, beautifulsoup4, pyquery
+
+Successfully installed beautifulsoup4-4.15.0 cachetools-7.2.4 certifi-2026.10.23 chaquopy-libcxx-180000 chaquopy-libxml2-2.9.8 chaquopy-libxslt-1.1.32 charset_normalizer-3.5.2 cssselect-1.4.0 idna-3.20 jsonpath-0.54 lxml-5.3.0 pycryptodome-3.21.0 pyquery-2.0.2 requests-2.34.2 soupsieve-2.10 typing-extensions-4.16.0 ujson-5.11.0 urllib3-2.8.0
+
+> Task :pyramid:mergeReleasePythonSources
+> Task :pyramid:generateReleasePythonProxies
+> Task :pyramid:generateReleaseResources FROM-CACHE
+> Task :pyramid:packageReleaseResources FROM-CACHE
+> Task :pyramid:processReleaseNavigationResources FROM-CACHE
+> Task :pyramid:parseReleaseLocalResources FROM-CACHE
+> Task :pyramid:generateReleaseRFile FROM-CACHE
+> Task :pyramid:javaPreCompileRelease FROM-CACHE
+> Task :pyramid:compileReleaseJavaWithJavac NO-SOURCE
+> Task :pyramid:mergeReleaseGeneratedProguardFiles
+> Task :pyramid:exportReleaseConsumerProguardFiles
+> Task :pyramid:bundleLibCompileToJarRelease
+> Task :pyramid:writeReleaseAarMetadata
+> Task :pyramid:extractDeepLinksRelease FROM-CACHE
+> Task :pyramid:processReleaseManifest FROM-CACHE
+> Task :pyramid:mapReleaseSourceSetPaths
+> Task :pyramid:compileReleaseLibraryResources FROM-CACHE
+> Task :pyramid:bundleLibRuntimeToJarRelease
+> Task :pyramid:processReleaseJavaRes NO-SOURCE
+> Task :pyramid:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseResources FROM-CACHE
+> Task :app:processReleaseNavigationResources FROM-CACHE
+> Task :app:parseReleaseLocalResources FROM-CACHE
+> Task :app:generateReleaseRFile FROM-CACHE
+> Task :pyramid:generateReleasePythonMiscAssets
+> Task :pyramid:generateReleasePythonRequirementsAssets
+> Task :app:checkReleaseAarMetadata
+> Task :app:compileReleaseNavigationResources FROM-CACHE
+> Task :app:processReleaseMainManifest FROM-CACHE
+> Task :app:processReleaseManifest FROM-CACHE
+> Task :app:processReleaseManifestForPackage FROM-CACHE
+> Task :app:processReleaseResources FROM-CACHE
+> Task :pyramid:generateReleasePythonSourceAssets
+> Task :pyramid:generateReleasePythonBuildAssets
+> Task :pyramid:mergeReleaseAssets
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :pyramid:checkReleaseAarMetadata
+
+> Task :pyramid:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libchaquopy_java.so, libcrypto_chaquopy.so, libcrypto_python.so, libpython3.10.so, libpython3.so, libsqlite3_chaquopy.so, libsqlite3_python.so, libssl_chaquopy.so, libssl_python.so. Run with --info option to learn more.
+
+> Task :pyramid:copyReleaseJniLibsProjectAndLocalJars
+> Task :pyramid:extractDeepLinksForAarRelease FROM-CACHE
+> Task :pyramid:extractReleaseAnnotations FROM-CACHE
+> Task :pyramid:mergeReleaseConsumerProguardFiles
+> Task :pyramid:prepareLintJarForPublish
+> Task :pyramid:mergeReleaseJavaResource
+> Task :pyramid:syncReleaseLibJars FROM-CACHE
+> Task :pyramid:bundleReleaseAar
+> Task :pyramid:mergeReleaseResources FROM-CACHE
+> Task :pyramid:verifyReleaseResources FROM-CACHE
+> Task :pyramid:assembleRelease
+> Task :app:kspReleaseKotlin
+> Task :app:compileReleaseKotlin
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:174:28 Unnecessary safe call on a non-null receiver of type 'String'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:232:99 'fun newInstance(): CapturedType(*)!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:310:46 Unchecked cast of 'Any!' to 'Array<Any?>?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/JarLoader.kt:317:25 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/SpiderApi.kt:63:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/SpiderApi.kt:67:56 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/SpiderApi.kt:68:42 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Async.kt:17:29 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Async.kt:29:27 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Global.kt:83:125 'static fun encode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Global.kt:83:176 'static fun encode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/HtmlParser.kt:200:38 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/crawler/js/Json.kt:16:28 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/catvod/net/OkDns.kt:18:17 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.kt:1000:17 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/ConfigLoader.kt:425:28 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:121:44 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:165:44 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:200:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:230:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:269:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:312:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:339:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/DanmakuApi.kt:372:40 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:17:25 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:31:25 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:49:25 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SortAdjuster.kt:57:21 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/api/SpiderLoader.kt:153:28 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:65:31 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:65:46 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:74:20 'fun setStatusBarContrastEnforced(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:120:46 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:121:43 'static field SYSTEM_UI_FLAG_LAYOUT_STABLE: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:122:43 'static field SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:123:43 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:124:43 'static field SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:125:43 'static field SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:126:43 'static field SYSTEM_UI_FLAG_IMMERSIVE_STICKY: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:127:30 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:137:23 'fun setOnSystemUiVisibilityChangeListener(p0: View.OnSystemUiVisibilityChangeListener!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:138:39 'static field SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:138:78 'static field SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:210:27 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/base/BaseActivity.kt:210:42 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/AbsJson.kt:205:34 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/AbsJson.kt:216:34 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/AbsJson.kt:253:30 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/Epginfo.kt:40:44 Java type mismatch: inferred type is 'Date?', but 'Date' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/LiveChannelItem.kt:123:25 The corresponding parameter in the supertype 'Any' is named 'other'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/bean/ProxyRule.kt:72:17 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/AppDataManager.kt:74:14 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/AppDataManager.kt:75:13 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/CurrentSubscription.kt:12:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/data/EpisodeMatcher.kt:113:41 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/io/FileUtils.kt:452:18 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/io/FileUtils.kt:453:17 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkGoHelper.kt:294:20 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkGoHelper.kt:329:49 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkProxySelector.kt:22:17 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/OkProxySelector.kt:50:21 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/Proxy.kt:63:32 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/Proxy.kt:78:28 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/net/Proxy.kt:113:28 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/MyVideoView.kt:230:38 The corresponding parameter in the supertype 'AppPlayerView' is named 'width'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/MyVideoView.kt:230:55 The corresponding parameter in the supertype 'AppPlayerView' is named 'height'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:251:49 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:277:45 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:554:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:579:18 'var allowUniversalAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:580:18 'var allowFileAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:581:18 'var databaseEnabled: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:632:22 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlayUrlResolver.kt:694:22 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackConfigDelegate.kt:34:92 Cast is redundant.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackFetch.kt:70:68 Java type mismatch: inferred type is 'Nothing?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackFetch.kt:75:72 Java type mismatch: inferred type is 'Nothing?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackFetch.kt:96:74 Java type mismatch: inferred type is 'Nothing?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackRetryDelegate.kt:425:130 Cast is redundant.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:22:8 'class NotificationCompat : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:39:31 'class MediaSessionCompat : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:113:24 'constructor(p0: Context, p1: String): MediaSessionCompat' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:13 'class MediaSessionCompat : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:32 'static field FLAG_HANDLES_MEDIA_BUTTONS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:62 'class MediaSessionCompat : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:115:81 'static field FLAG_HANDLES_TRANSPORT_CONTROLS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:117:63 'class Callback : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:274:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:274:44 'constructor(): MediaMetadataCompat.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:275:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:276:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:277:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:278:24 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:279:44 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:281:32 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:284:45 'class MediaMetadataCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:286:22 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:286:57 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:287:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:287:54 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:288:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:288:56 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:289:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:290:34 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:290:73 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:292:13 'class PlaybackStateCompat : Any, Parcelable' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:292:33 'constructor(): PlaybackStateCompat.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:311:32 'constructor(p0: Context): NotificationCompat.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:323:17 'constructor(): NotificationCompat.MediaStyle' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:389:71 'static field WIFI_MODE_FULL_HIGH_PERF: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PlaybackService.kt:442:9 'fun stopForeground(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PreloadManagerHolder.kt:192:18 'fun setMediaSourceFactory(p0: MediaSource.Factory): DefaultPreloadManager.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PreloadManagerHolder.kt:243:17 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/PreloadManagerHolder.kt:243:32 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/InfoOsdText.kt:231:28 Unnecessary safe call on a non-null receiver of type 'String'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/InfoOsdText.kt:242:27 Unnecessary safe call on a non-null receiver of type 'Display'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:148:14 'lateinit' is unnecessary: definitely initialized in constructors.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:150:14 'lateinit' is unnecessary: definitely initialized in constructors.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:152:14 'lateinit' is unnecessary: definitely initialized in constructors.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:154:14 'lateinit' is unnecessary: definitely initialized in constructors.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/controller/VideoPlayerController.kt:504:30 The corresponding parameter in the supertype 'PlayerControlApi' is named 'listener'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/effect/anime4k/Anime4kShader.kt:65:48 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:170:21 'fun clearSelectionOverrides(p0: Int): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:174:29 'fun clearSelectionOverrides(p0: Int): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:177:21 'fun setSelectionOverride(p0: Int, p1: TrackGroupArray, p2: DefaultTrackSelector.SelectionOverride?): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:182:36 Unnecessary safe call on a non-null receiver of type 'Format'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:182:72 Unnecessary safe call on a non-null receiver of type 'Format'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:182:110 Unnecessary safe call on a non-null receiver of type 'Format'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/EngineTrackSelection.kt:313:87 'fun clearSelectionOverrides(): DefaultTrackSelector.Parameters.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:70:54 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:93:15 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:94:15 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:112:41 'class ConcatenatingMediaSource : CompositeMediaSource<ConcatenatingMediaSource.MediaSourceHolder>' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:130:22 'constructor(p0: Boolean, p1: Boolean, p2: ShuffleOrder, vararg p3: MediaSource): ConcatenatingMediaSource' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:244:33 'fun getSerializable(p0: String?): Serializable?' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:258:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:258:36 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:299:33 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:305:89 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:306:37 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:307:27 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:314:65 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:316:62 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:321:26 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:324:26 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:326:22 'static field TYPE_OTHER: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:331:15 'static field TYPE_HLS: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/MediaSources.kt:332:15 'static field TYPE_DASH: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/OkHttpDataSource.kt:131:22 'static fun toByteArray(p0: InputStream): ByteArray' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/PlayerEngine.kt:231:96 'field unappliedRotationDegrees: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/PlayerEngine.kt:309:38 'constructor(p0: MappingTrackSelector?, p1: String): EventLogger' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/engine/PlayerEngine.kt:1048:91 Elvis operator (?:) always returns the left operand of non-nullable type 'MediaSource'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/host/PlayerAudioFocus.kt:113:30 'fun requestAudioFocus(p0: AudioManager.OnAudioFocusChangeListener!, p1: Int, p2: Int): Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/host/PlayerAudioFocus.kt:120:17 'fun abandonAudioFocus(p0: AudioManager.OnAudioFocusChangeListener!): Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/thirdparty/RemoteTVBox.kt:96:46 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/ui/DanmuSheets.kt:190:40 The corresponding parameter in the supertype 'SearchListCallback' is named 'results'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/ui/PlayerParamsSheet.kt:215:5 'fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier: Modifier = ..., enabled: Boolean = ..., valueRange: ClosedFloatingPointRange<Float> = ..., steps: Int = ..., onValueChangeFinished: (() -> Unit)? = ..., colors: SliderColors = ..., interactionSource: MutableInteractionSource = ...): Unit' is deprecated. Use the Slider overload that accepts SliderState, onValueChange, and onValueChangeFinished instead.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/player/ui/PlayerPicturePanel.kt:209:5 'fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier: Modifier = ..., enabled: Boolean = ..., valueRange: ClosedFloatingPointRange<Float> = ..., steps: Int = ..., onValueChangeFinished: (() -> Unit)? = ..., colors: SliderColors = ..., interactionSource: MutableInteractionSource = ...): Unit' is deprecated. Use the Slider overload that accepts SliderState, onValueChange, and onValueChangeFinished instead.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/CacheRequestProcess.kt:21:41 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:167:54 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:172:78 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:203:40 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:216:58 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:257:78 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:273:31 'val parms: (Mutable)Map<String!, String!>!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:323:61 Java type mismatch: inferred type is 'String?', but 'CharSequence' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:362:40 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:429:41 'val connectionInfo: WifiInfo!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/server/RemoteServer.kt:429:56 'val ipAddress: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/DetailLoader.kt:48:38 'static fun decode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/PlayLoader.kt:140:78 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/PlayLoader.kt:210:22 'fun CoroutineScope.launch(context: Job, start: CoroutineStart = ..., block: suspend CoroutineScope.() -> Unit): Job' is deprecated. Passing a Job to coroutine builders breaks structured concurrency, leading to hard-to-diagnose errors. This pattern should be avoided. This overload will be deprecated with an error in the future.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/PushDetailResolver.kt:52:58 'static fun decode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SortLoader.kt:225:24 'static fun encode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SourceHelper.kt:197:40 Cast is redundant.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SourceResultParser.kt:100:21 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SourceViewModel.kt:81:22 'fun CoroutineScope.launch(context: Job, start: CoroutineStart = ..., block: suspend CoroutineScope.() -> Unit): Job' is deprecated. Passing a Job to coroutine builders breaks structured concurrency, leading to hard-to-diagnose errors. This pattern should be avoided. This overload will be deprecated with an error in the future.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SourceViewModel.kt:100:94 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SourceViewModel.kt:116:22 'fun CoroutineScope.launch(context: Job, start: CoroutineStart = ..., block: suspend CoroutineScope.() -> Unit): Job' is deprecated. Passing a Job to coroutine builders breaks structured concurrency, leading to hard-to-diagnose errors. This pattern should be avoided. This overload will be deprecated with an error in the future.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/sourcedata/SubtitleViewModel.kt:187:55 'static fun decode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/SubtitleLoader.kt:185:35 'static fun decode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/SubtitleLoader.kt:191:35 'static fun decode(p0: String!): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/SubtitleLoader.kt:238:30 'constructor(p0: Reader!, p1: Charset!): ReaderInputStream' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/SubtitleLoader.kt:268:16 'constructor(p0: Reader!, p1: Charset!): ReaderInputStream' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/widget/SimpleSubtitleView.kt:69:13 'lateinit' is unnecessary: definitely initialized in constructors.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/widget/SimpleSubtitleView.kt:110:37 'static fun fromHtml(p0: String!): Spanned!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/subtitle/widget/SimpleSubtitleView.kt:118:22 'static fun fromHtml(p0: String!): Spanned!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailEpisodes.kt:153:46 Unnecessary safe call on a non-null receiver of type 'List<TmdbApi.TmdbEpisode>'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailViewModel.kt:974:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/LiveCatchupController.kt:44:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/LiveOverlayController.kt:107:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayActivity.kt:883:21 Unnecessary safe call on a non-null receiver of type 'MutableMap<String, String>'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/LivePlayViewModel.kt:271:21 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/activity/LiveScreens.kt:363:9 'fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier: Modifier = ..., enabled: Boolean = ..., valueRange: ClosedFloatingPointRange<Float> = ..., steps: Int = ..., onValueChangeFinished: (() -> Unit)? = ..., colors: SliderColors = ..., interactionSource: MutableInteractionSource = ...): Unit' is deprecated. Use the Slider overload that accepts SliderState, onValueChange, and onValueChangeFinished instead.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/components/SettingsGroup.kt:243:9 'fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier: Modifier = ..., enabled: Boolean = ..., valueRange: ClosedFloatingPointRange<Float> = ..., steps: Int = ..., onValueChangeFinished: (() -> Unit)? = ..., colors: SliderColors = ..., interactionSource: MutableInteractionSource = ...): Unit' is deprecated. Use the Slider overload that accepts SliderState, onValueChange, and onValueChangeFinished instead.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/components/ThemeColorPickerSheet.kt:75:13 'fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier: Modifier = ..., enabled: Boolean = ..., valueRange: ClosedFloatingPointRange<Float> = ..., steps: Int = ..., onValueChangeFinished: (() -> Unit)? = ..., colors: SliderColors = ..., interactionSource: MutableInteractionSource = ...): Unit' is deprecated. Use the Slider overload that accepts SliderState, onValueChange, and onValueChangeFinished instead.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/page/HistoryViewModel.kt:43:18 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/page/ThemeSettingsPage.kt:346:9 'fun Slider(value: Float, onValueChange: (Float) -> Unit, modifier: Modifier = ..., enabled: Boolean = ..., valueRange: ClosedFloatingPointRange<Float> = ..., steps: Int = ..., onValueChangeFinished: (() -> Unit)? = ..., colors: SliderColors = ..., interactionSource: MutableInteractionSource = ...): Unit' is deprecated. Use the Slider overload that accepts SliderState, onValueChange, and onValueChangeFinished instead.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:62:5 'lateinit' is unnecessary: definitely initialized in constructors.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:140:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:173:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:209:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:219:29 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:244:17 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:280:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:323:20 'constructor(p0: Handler.Callback?): Handler' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:380:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:380:36 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:470:33 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:471:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:493:24 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:524:17 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:544:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:573:29 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:599:60 Unnecessary safe call on a non-null receiver of type 'PlaybackController'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:655:27 The corresponding parameter in the supertype 'PlaybackHostApi' is named 'rmProgress'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:701:17 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:732:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:740:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:762:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:790:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainer.kt:807:67 Cast is redundant.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerOverlays.kt:34:17 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:180:84 'fun getColorStateList(p0: Int): ColorStateList' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:182:84 'fun getColorStateList(p0: Int): ColorStateList' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:245:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:245:41 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:261:37 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:261:65 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:290:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:290:41 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:292:48 'fun getColorStateList(p0: Int): ColorStateList' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:337:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:442:39 Unnecessary safe call on a non-null receiver of type 'Subtitle'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:494:33 Unnecessary safe call on a non-null receiver of type 'PlaybackController'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:510:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:510:41 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:517:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerSubtitles.kt:517:41 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:60:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:97:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:101:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:125:48 Elvis operator (?:) always returns the left operand of non-nullable type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:131:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:164:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:172:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:181:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:210:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:219:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:233:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:240:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:248:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:251:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:268:9 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/player/PlayContainerViewBridge.kt:271:30 Unnecessary safe call on a non-null receiver of type 'PlayerControlApi'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/ui/theme/Theme.kt:102:29 'var isStatusBarContrastEnforced: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/BootGuard.kt:212:31 Elvis operator (?:) always returns the left operand of non-nullable type 'String'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/BootGuard.kt:245:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/DefaultConfig.kt:20:32 'field versionCode: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/ImgUtil.kt:102:32 The corresponding parameter in the supertype 'Target' is named 'result'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:20:37 'fun getConnectionInfo(): WifiInfo!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:20:57 'fun getIpAddress(): Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:32:40 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:51:40 'fun getConnectionInfo(): WifiInfo!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:55:38 'fun getIpAddress(): Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:79:32 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:123:27 'fun getAllNetworkInfo(): Array<(out) NetworkInfo!>' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:126:28 'fun getTypeName(): String!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:128:25 'val isConnected: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/LocalIPAddress.kt:134:25 'val isConnected: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/M3u8.kt:215:13 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/M3u8.kt:404:63 'fun divide(p0: BigDecimal!, p1: Int, p2: Int): BigDecimal!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/M3u8.kt:404:91 'static field ROUND_HALF_UP: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/M3u8.kt:406:38 'fun setScale(p0: Int, p1: Int): BigDecimal!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/M3u8.kt:406:65 'static field ROUND_HALF_UP: Int' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/PlayerUtils.kt:85:53 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/PlayerUtils.kt:88:21 'fun getSize(p0: Point!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/PlayerUtils.kt:89:21 'fun getRealSize(p0: Point!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/SSL/SSLSocketFactoryCompat.kt:31:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/ScreenUtils.kt:16:12 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/ScreenUtils.kt:16:27 'fun getMetrics(p0: DisplayMetrics!): Unit' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/TmdbApi.kt:282:46 Redundant call of conversion method.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/TmdbApi.kt:288:45 Redundant call of conversion method.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/VideoParseRuler.kt:106:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/VideoParseRuler.kt:154:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/VideoParseRuler.kt:192:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/VideoParseRuler.kt:221:17 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/live/TxtSubscribe.kt:36:13 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/live/TxtSubscribe.kt:378:36 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'String?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/parser/SuperParse.kt:30:21 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/parser/SuperParse.kt:90:21 Condition is always 'false'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/parser/SuperParse.kt:199:50 Redundant call of conversion method.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/main/java/com/github/tvbox/osc/util/thunder/Thunder.kt:721:23 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'Array<(out) File!>?'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/python/java/com/undcover/freedom/pyramid/PythonLoader.kt:245:21 Condition is always 'true'.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/python/java/com/undcover/freedom/pyramid/PythonSpider.kt:45:42 The corresponding parameter in the supertype 'Spider' is named 'extend'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/AVBox-Script/AVBox-Script/app/src/python/java/com/undcover/freedom/pyramid/PythonSpider.kt:166:13 Condition is always 'false'.
+
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:mergeReleaseGeneratedProguardFiles
+> Task :app:processReleaseJavaRes
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:mergeReleaseJavaResource
+> Task :app:produceReleaseComposeMapping
+> Task :app:reportReleaseComposeMappingErrors
+> Task :app:minifyReleaseWithR8
+> Task :app:convertShrunkResourcesToBinaryRelease
+> Task :app:optimizeReleaseResources
+> Task :app:l8DexDesugarLibRelease
+> Task :app:mergeReleaseComposeMapping
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_4-1792851980397.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/AVBox-Script/AVBox-Script/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 4m 29s
+159 actionable tasks: 99 executed, 60 from cache
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.1/userguide/configuration_cache_enabling.html
