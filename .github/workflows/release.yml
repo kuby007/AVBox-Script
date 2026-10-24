@@ -85,30 +85,23 @@ jobs:
 
       - name: Build release APK
         run: |
-          ./gradlew assembleRelease --no-daemon --stacktrace --max-workers=2 2>&1 | tee gradle-build.log
-          exit "${PIPESTATUS[0]}"
+          set -euo pipefail
+          ./gradlew assembleRelease --no-daemon --stacktrace --max-workers=2 2>&1 | tee gradle_build.log
 
-      - name: Publish gradle log back to repo on failure
+      # 编译失败时把日志提交到 ci-log 分支，便于在无法下载 artifacts 的环境里排查
+      - name: Dump Gradle log on failure
         if: failure()
         run: |
-          mkdir -p ci-logs
-          {
-            echo "run_id=${{ github.run_id }}"
-            echo "sha=${{ github.sha }}"
-            echo "===== ERROR LINES ====="
-          } > ci-logs/last-failure.txt
-          if [ -f gradle-build.log ]; then
-            grep -n -E "^e: |error: |FAILURE: |Execution failed|Caused by:|What went wrong|\* Try:|Could not |Unresolved reference|None of the following" gradle-build.log | head -200 >> ci-logs/last-failure.txt || true
-            echo "===== TAIL =====" >> ci-logs/last-failure.txt
-            tail -150 gradle-build.log >> ci-logs/last-failure.txt || true
-          else
-            echo "gradle-build.log NOT FOUND" >> ci-logs/last-failure.txt
-          fi
+          set -uo pipefail
           git config user.name "ci-bot"
-          git config user.email "ci-bot@users.noreply.github.com"
-          git add -f ci-logs/last-failure.txt
-          git commit -m "ci: dump gradle log for run ${{ github.run_id }}" || echo "nothing to commit"
-          git push origin HEAD:"${GITHUB_REF_NAME}" || echo "push skipped"
+          git config user.email "ci-bot@example.com"
+          git checkout -B ci-log
+          cp gradle_build.log ci-gradle-build.log
+          tail -n 400 gradle_build.log > ci-gradle-tail.log || true
+          grep -nE '^(e: |w: |FAILURE:|\* What went wrong|Execution failed)' gradle_build.log > ci-gradle-errors.txt || true
+          git add -f ci-gradle-build.log ci-gradle-tail.log ci-gradle-errors.txt
+          git commit -m "ci: gradle build log (failure)"
+          git push -f origin ci-log
 
       - name: Rename & verify APK
         id: apk
@@ -190,18 +183,3 @@ jobs:
           body_path: release_body.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # 用 GITHUB_TOKEN 创建的 release 不会触发 notify.yml 的 release 事件，故在此显式调用
-  notify:
-    needs: build
-    if: needs.build.outputs.release_existed != 'true'
-    # 未配置 TELEGRAM_* 时通知必然失败，不应让整个 workflow 变红（APK 此时已上传）
-    continue-on-error: true
-    uses: ./.github/workflows/notify.yml
-    with:
-      tag: ${{ inputs.version }}
-    secrets:
-      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      TELEGRAM_THREAD_ID: ${{ secrets.TELEGRAM_THREAD_ID }}
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
