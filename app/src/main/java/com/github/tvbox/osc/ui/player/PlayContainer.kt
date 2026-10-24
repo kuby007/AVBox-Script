@@ -14,7 +14,6 @@ import android.webkit.WebView
 import android.widget.FrameLayout
 import android.widget.Toast
 import com.github.tvbox.osc.R
-import com.github.tvbox.osc.dlna.CastVideo
 import com.github.tvbox.osc.event.RefreshEvent
 import com.github.tvbox.osc.player.ExoPlayer
 import com.github.tvbox.osc.player.MyVideoView
@@ -33,7 +32,6 @@ import com.github.tvbox.osc.player.controller.VideoPlayerController
 import com.github.tvbox.osc.player.engine.MediaSources
 import com.github.tvbox.osc.player.controller.PlayerControlApi
 import com.github.tvbox.osc.player.danmu.DanmuLoadController
-import com.github.tvbox.osc.player.state.CastSheetState
 import com.github.tvbox.osc.player.state.PlayerUiState
 import com.github.tvbox.osc.player.state.PlayState
 import com.github.tvbox.osc.util.HistoryHelper
@@ -373,13 +371,7 @@ class PlayContainer(activity: Activity) : FrameLayout(activity), CustomAdapt, Pl
         }
         val headers: HashMap<String, String>? = scheduler.webHeaderMap()?.let { HashMap(it) }
         val title = getCastTitle()
-        scope.launch {
-            val video = CastVideo(castUrl, title, headers, getCastPosition())
-            val uiState = mController.getUiState()
-            uiState.castSheet = CastSheetState(video) {
-                mVideoView?.pause()
-            }
-        }
+        // DLNA 投屏已移除(Cling 依赖无可用仓库)
     }
 
     fun openDanmuSearchSheet() = overlays.openDanmuSearchSheet()
