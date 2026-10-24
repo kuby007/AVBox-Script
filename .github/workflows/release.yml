@@ -83,10 +83,21 @@ jobs:
           done
           ls -l .key/app-release.jks
 
+      # 镜像站常见“有 pom、缺构件”：Gradle 缓存会记住模块来自哪个仓库，
+      # 换仓库顺序也不会重新解析，所以这里必须清掉相关缓存并强制刷新。
+      - name: Purge stale dependency cache
+        run: |
+          set -uo pipefail
+          rm -rf ~/.gradle/caches/modules-2/files-2.1/com.chaquo.python.runtime || true
+          rm -rf ~/.gradle/caches/modules-2/files-2.1/com.github.getActivity || true
+          find ~/.gradle/caches/modules-2/metadata-* -maxdepth 3 -type d \
+            \( -name "com.chaquo.python.runtime" -o -name "com.github.getActivity" \) -exec rm -rf {} + 2>/dev/null || true
+          echo "cache purged"
+
       - name: Build release APK
         run: |
           set -euo pipefail
-          ./gradlew assembleRelease --no-daemon --stacktrace --max-workers=2 2>&1 | tee gradle_build.log
+          ./gradlew assembleRelease --no-daemon --stacktrace --max-workers=2 --refresh-dependencies 2>&1 | tee gradle_build.log
 
       # 编译失败时把日志提交到 ci-log 分支，便于在无法下载 artifacts 的环境里排查
       - name: Dump Gradle log on failure
