@@ -21,8 +21,13 @@ dependencyResolutionManagement {
     repositories {
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
+        google()
         mavenCentral()
         maven("https://jitpack.io")
+        // 弹幕库 DanmakuFlameMaster 只在 jcenter 系仓库里，腾讯云/中央仓库没有
+        maven("https://maven.aliyun.com/repository/public")
+        maven("https://maven.aliyun.com/repository/jcenter")
+        maven("https://maven.aliyun.com/repository/releases")
     }
 }
 
