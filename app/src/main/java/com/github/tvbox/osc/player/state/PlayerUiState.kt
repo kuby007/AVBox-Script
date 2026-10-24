@@ -91,12 +91,13 @@ class PlayerUiState {
     var danmuSearchSheet: DanmuSearchSheetState? by mutableStateOf(null)
     var subtitleSheet: SubtitleSheetState? by mutableStateOf(null)
     var subtitleSearchSheet: SubtitleSearchSheetState? by mutableStateOf(null)
+
     var episodeSheetOpen: Boolean by mutableStateOf(false)
 
     val overlayPanelOpen: Boolean
         get() = selectDialog != null || paramsSheet != null || danmuSettingSheet != null ||
                 danmuSearchSheet != null || subtitleSheet != null || subtitleSearchSheet != null ||
-                castSheet != null || episodeSheetOpen
+                episodeSheetOpen
 
     val danmuBtnVisible: Boolean get() = danmuOpen
 
@@ -216,6 +217,8 @@ class SubtitleSearchSheetState(
     val searchWord: String,
     val onLoadSubtitle: (Subtitle, String) -> Unit,
 )
+
+
 
 interface PlayerActions {
     fun toggleControls()
