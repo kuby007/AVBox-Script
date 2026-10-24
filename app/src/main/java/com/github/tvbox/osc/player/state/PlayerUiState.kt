@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.github.tvbox.osc.bean.Subtitle
 import com.github.tvbox.osc.bean.VodInfo
-import com.github.tvbox.osc.dlna.CastVideo
 import com.github.tvbox.osc.player.effect.PictureEffectUnavailableReason
 import com.github.tvbox.osc.player.effect.PicturePreset
 import com.github.tvbox.osc.player.effect.PictureProfile
@@ -92,7 +91,6 @@ class PlayerUiState {
     var danmuSearchSheet: DanmuSearchSheetState? by mutableStateOf(null)
     var subtitleSheet: SubtitleSheetState? by mutableStateOf(null)
     var subtitleSearchSheet: SubtitleSearchSheetState? by mutableStateOf(null)
-    var castSheet: CastSheetState? by mutableStateOf(null)
     var episodeSheetOpen: Boolean by mutableStateOf(false)
 
     val overlayPanelOpen: Boolean
@@ -217,11 +215,6 @@ class SubtitleSheetState(
 class SubtitleSearchSheetState(
     val searchWord: String,
     val onLoadSubtitle: (Subtitle, String) -> Unit,
-)
-
-class CastSheetState(
-    val video: CastVideo,
-    val onCastSuccess: () -> Unit,
 )
 
 interface PlayerActions {
