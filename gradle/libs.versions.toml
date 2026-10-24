@@ -24,7 +24,7 @@ androidxSqlite = "2.7.1"
 okio = "3.18.2"
 kotlinxCoroutines = "1.11.0"
 gson = "2.14.0"
-autosize = "1.2.1"
+autosize = "v1.2.1"
 xstream = "1.4.21"
 eventbus = "3.3.1"
 mmkv = "2.4.2"
@@ -74,7 +74,7 @@ androidx-sqlite-bundled = { group = "androidx.sqlite", name = "sqlite-bundled", 
 okio = { group = "com.squareup.okio", name = "okio", version.ref = "okio" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
-autosize = { group = "me.jessyan", name = "autosize", version.ref = "autosize" }
+autosize = { group = "com.github.JessYanCoding", name = "AndroidAutoSize", version.ref = "autosize" }
 xstream = { group = "com.thoughtworks.xstream", name = "xstream", version.ref = "xstream" }
 eventbus = { group = "org.greenrobot", name = "eventbus", version.ref = "eventbus" }
 mmkv = { group = "com.tencent", name = "mmkv", version.ref = "mmkv" }
