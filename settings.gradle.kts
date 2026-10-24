@@ -21,8 +21,6 @@ dependencyResolutionManagement {
     repositories {
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
-        // Cling (DLNA) 不在 Maven Central 镜像上，仅发布于 4thline 私有仓库
-        maven("https://4thline.org/m2")
         mavenCentral()
         maven("https://jitpack.io")
     }
