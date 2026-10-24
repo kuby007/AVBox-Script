@@ -1,0 +1,10 @@
+probe at 2026-10-24T13:42:52Z
+404  https://jitpack.io/com/github/ctiao/DanmakuFlameMaster/0.9.25/DanmakuFlameMaster-0.9.25.pom
+404  https://jitpack.io/com/github/ctiao/dfm/0.9.25/dfm-0.9.25.pom
+404  https://jitpack.io/com/github/ctiao/DanmakuFlameMaster/v0.9.25/DanmakuFlameMaster-v0.9.25.pom
+200  https://jitpack.io/com/github/boxtm66/Danmaku/DanmakuFlameMaster/v0.9.26/DanmakuFlameMaster-v0.9.26.pom
+404  https://jitpack.io/com/github/boxtm66/Danmaku/dfm/v0.9.26/dfm-v0.9.26.pom
+200  https://maven.aliyun.com/repository/public/com/github/ctiao/DanmakuFlameMaster/0.9.25/DanmakuFlameMaster-0.9.25.pom
+200  https://maven.aliyun.com/repository/public/com/github/ctiao/dfm/0.9.25/dfm-0.9.25.pom
+200  https://jitpack.io/com/github/JessYanCoding/AndroidAutoSize/v1.2.1/AndroidAutoSize-v1.2.1.pom
+200  https://jitpack.io/com/github/JessYanCoding/AndroidAutoSize/1.2.1/AndroidAutoSize-1.2.1.pom
