@@ -16,18 +16,18 @@ pluginManagement {
     }
 }
 
+// 顺序说明：
+// 1) google()/mavenCentral() 放最前 —— 腾讯镜像有些库只有 pom 没有 aar（如 XXPermissions），会取不到产物
+// 2) 腾讯镜像兜底常用库（含 me.jessyan:autosize 这类 jcenter 老库）
+// 3) aliyun public 放最后 —— 只有它还有 DanmakuFlameMaster（ctiao 0.9.25）
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.PREFER_SETTINGS
     repositories {
-        maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
-        maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         google()
         mavenCentral()
+        maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://jitpack.io")
-        // 弹幕库 DanmakuFlameMaster 只在 jcenter 系仓库里，腾讯云/中央仓库没有
         maven("https://maven.aliyun.com/repository/public")
-        maven("https://maven.aliyun.com/repository/jcenter")
-        maven("https://maven.aliyun.com/repository/releases")
     }
 }
 
