@@ -22,6 +22,8 @@ dependencyResolutionManagement {
         maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
         maven("https://jitpack.io")
+        maven("https://4thline.org/m2")
+        maven("http://4thline.org/m2").apply { isAllowInsecureProtocol = true }
         maven("https://chaquo.com/maven")
         maven("https://repo1.maven.org/maven2")
         google()
