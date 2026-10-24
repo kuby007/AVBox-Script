@@ -27,14 +27,10 @@ dependencyResolutionManagement {
         google()
         maven("https://maven.aliyun.com/repository/public")
         maven("https://maven.aliyun.com/repository/google")
-        // Cling(UPnP/DLNA) 只发布在作者自建仓库,不在 Maven Central / Google / 阿里云
-        maven {
-            url = uri("https://4thline.org/m2")
-        }
-        maven {
-            url = uri("http://4thline.org/m2")
-            isAllowInsecureProtocol = true
-        }
+        maven("https://maven.aliyun.com/repository/jcenter")
+        maven("https://maven.aliyun.com/repository/central")
+        maven("https://repo.huaweicloud.com/repository/maven/")
+        maven("https://mirrors.huaweicloud.com/repository/maven/")
     }
 }
 
