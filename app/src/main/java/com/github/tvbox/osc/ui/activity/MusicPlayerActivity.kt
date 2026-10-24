@@ -19,7 +19,6 @@ import com.github.tvbox.osc.data.AppGraph
 import com.github.tvbox.osc.data.EpisodeTotals
 import com.github.tvbox.osc.data.HistoryWriter
 import com.github.tvbox.osc.data.WatchProgressStore
-import com.github.tvbox.osc.dlna.CastVideo
 import com.github.tvbox.osc.event.RefreshEvent
 import com.github.tvbox.osc.player.KernelDecision
 import com.github.tvbox.osc.player.KernelReusePolicy
@@ -34,7 +33,6 @@ import com.github.tvbox.osc.player.PlaybackViewBridge
 import com.github.tvbox.osc.player.engine.MediaSources
 import com.github.tvbox.osc.player.engine.iso.IsoSessionSignal
 import com.github.tvbox.osc.player.PlayerHelper
-import com.github.tvbox.osc.player.state.CastSheetState
 import com.github.tvbox.osc.player.state.PlayState
 import com.github.tvbox.osc.ui.music.MusicLrc
 import com.github.tvbox.osc.ui.music.MusicPlayMode
@@ -368,19 +366,7 @@ class MusicPlayerActivity : BaseActivity(), PlaybackPage {
             .filter { it.isNotBlank() }
             .joinToString(" ")
             .ifBlank { "TVBox" }
-        val headers = controller.webHeaderMap()?.let { HashMap(it) }
-        ui.castSheet = CastSheetState(
-            CastVideo(
-                controller.getCastUrl(url) ?: url,
-                title,
-                headers,
-                player.currentPosition.coerceAtLeast(0L),
-            ),
-            onCastSuccess = {
-                player.pause()
-                controller.updateMusicSession()
-            },
-        )
+        // DLNA 投屏已移除(Cling 依赖无可用仓库)
     }
 
     private fun refreshMeta() {
