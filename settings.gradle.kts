@@ -20,19 +20,17 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.PREFER_SETTINGS
     repositories {
-        // Chaquopy 运行时（含 .imy 等自定义扩展名的构件）只在官方仓库发布，镜像不同步，必须放首位
-        maven("https://chaquo.com/maven")
-        maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
-        maven("https://mirrors.cloud.tencent.com/nexus/repository/gradle-plugins")
-        maven("https://jitpack.io")
-        maven("https://repo1.maven.org/maven2")
+        // 顺序很关键：镜像站常提供 pom 却缺构件（.imy/.aar 等），
+        // Gradle 一旦从某仓库拿到元数据就只去该仓库取文件，
+        // 因此官方源必须排在镜像之前。
         google()
+        maven("https://chaquo.com/maven")
+        maven("https://repo1.maven.org/maven2")
+        maven("https://jitpack.io")
+        // 以下仅为加速镜像，兜底用
+        maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public")
         maven("https://maven.aliyun.com/repository/public")
-        maven("https://maven.aliyun.com/repository/google")
-        maven("https://maven.aliyun.com/repository/jcenter")
-        maven("https://maven.aliyun.com/repository/central")
         maven("https://repo.huaweicloud.com/repository/maven/")
-        maven("https://mirrors.huaweicloud.com/repository/maven/")
     }
 }
 
